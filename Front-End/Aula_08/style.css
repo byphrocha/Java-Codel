@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    color: #777;
+    background-color: lightgreen;
+    height: 100vh; /* 100% */
+    border: 2px solid blue;
+}
+h3{
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.conteudo{
+    color: rgb(6, 201, 255);
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+}
+.caixa1{
+    height: 100%;
+    position: relative;
+    background-image: url(imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
+    list-style: none;
+
+}
+.conteudo{
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+.titulo{
+    color: #fff;
+    background-color: black;
+    padding: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    border-radius: 20px;
+    opacity: 0.8;
+    
+    
+}
+.caixa2{
+    height: 100%;
+    position: relative;
+    background-image: url(imagem2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
+    list-style: none;
+}
+.caixa3{
+    height: 100%;
+    position: relative;
+    background-image: url(imagem3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
+    list-style: none;
+}
+.caixa4{
+    height: 100%;
+    position: relative;
+    background-image: url(imagem4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
+    list-style: none;
+}
+.caixa5{
+    height: 100%;
+    position: relative;
+    background-image: url(imagem5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
+    list-style: none;
+}
+.caixa6{
+    height: 100%;
+    position: relative;
+    background-image: url(imagem6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    background-color: rgb(164, 247, 219);
+    margin: 0;
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 1;
+
+}
+
+a{
+    text-decoration: none;
+    font-weight: 900;
+    
+
+}
+
+a:hover{
+    color:orange;
+    
+    
+
+}
+
+.voltar{
+    position: absolute;
+    top: 75px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}

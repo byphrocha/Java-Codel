@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    background-color: grey;
+    height: 2rem;
+    align-items: center;
+    width: 100%; 
+    padding-left: 1rem;
+    box-shadow: 0px 2px 10px black;
+    position: fixed;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: azure;
+}
+
+section{
+    min-height: 100vh;
+    padding: 2.5rem;
+    padding-left: 1.5rem;
+
+}
+
+#ini{
+    background: url(imagem1.jpg);
+    /*background-size: cover;*/
+    
+}
+#ser{
+    background: url(imagem2.jpg);
+}
+#con{
+    background: url(imagem3.jpg);
+}
+#cur{
+    background: url(imagem4.jpg);
+}
+#sob{
+    background: url(imagem5.jpg);
+}

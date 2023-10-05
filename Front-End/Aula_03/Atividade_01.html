@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio Aleatorio</title>
+</head>
+<body>
+    <script>
+        let n1, n2
+
+        n1 = Math.round(Math.random()*20)+1;
+        
+
+        for(i=0; i<4;){
+            n2 = parseInt(prompt("Qual número você acha que é: ")) 
+            if (n1==n2){
+                alert("Você acertou!")
+                break }
+                
+            else if(n2<n1){
+                alert("O número informado é menor!") 
+                i++
+                }
+            else if(n2>n1)
+                alert("O número informado é maior!")
+                i++   
+            }
+    </script>
+</body>
+</html>

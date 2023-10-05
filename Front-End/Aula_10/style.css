@@ -1,0 +1,58 @@
+body {
+    background: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo {
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    background-color: gainsboro;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: -3px -3px 5px;
+}
+
+#tabuada {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    text-shadow: 1px 1px 1px ;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+tbody tr:nth-child(odd){
+    background-color: aliceblue;
+
+}
+
+tbody tr:hover{
+    background-color: cadetblue;
+}
+
+.btn{
+    
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #58aae0;
+    border: none;
+    padding: 5px 7px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
