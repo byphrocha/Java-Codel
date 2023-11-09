@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+      label {
+        color: red;
+      }
+      /* input{
+            border-radius: 10px;
+            background-color: gray;
+            color: yellow;
+            padding: 5px 10px;
+        }*/
+      .texto1 {
+        border-radius: 10px;
+        background-color: gray;
+        color: yellow;
+        padding: 5px 10px;
+      }
+      .texto2 {
+        border-radius: 10px;
+        background-color: lightcyan;
+        color: darkblue;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <label>Nome</label><br>
+    <input type="text" class="texto1" name="" /><br>
+    <label>Endereço</label><br/>
+    <input type="text" class="texto2" name="" /><br>
+    <label>Cidade</label><br/>
+    <input type="text" class="texto1" name="" /><br>
+    <label>Bairro</label><br/>
+    <input type="text" class="texto2" name="" /><br>
+    <label>CEP</label><br/>
+    <input type="text" class="texto1" name="" /><br>
+    <hr/>
+
+    <label>Gênero</label><br/>
+    <input type="radio" name="genero" value="M" />Masculino <br>
+    <input type="radio" name="genero" value="F" />Feminino <br>
+    <input type="radio" name="genero" value="O" />Outros <br>
+    <hr>
+
+    <label for="">Interesses</label><br>
+    <input type="checkbox" name="Interesses">Esportes <br>
+    <input type="checkbox" name="Interesses">Casa <br>
+    <input type="checkbox" name="Interesses">Carro <br>
+    <input type="checkbox" name="Interesses">Informática <br>
+    <input type="checkbox" name="Interesses">Animais <br>
+    <hr>
+
+    <label for="">Estado Civil</label>
+    <select name="est_civil">
+        <option style="text-align: center;">--</option>
+        <option value="C">Casado</option>
+        <option value="S">Solteiro</option>
+        <option value="D">Divorciado</option>
+        <option value="A">Amasiado</option>
+        <option value="V">Viúvo</option>
+    </select><br>
+    <hr>
+    
+    <label>E-mail:</label>
+    <input type="email" name="email"><br>
+    <hr>
+    <label>Numero: </label>
+    <input type="number" name="numero" placeholder="Somente números"><br><br>
+    <hr>
+    <label for="" style="text-align: unset;">Descrição</label>
+    <textarea name="" id="" cols="30" rows="10";"></textarea><br><br>
+    <hr>
+
+    <label for="">Nascimento</label>
+    <input type="date"><br>
+
+    <label for="">Cores</label>
+    <input type="color"><br>
+
+    <label for="">Notas</label>
+    <input type="range" min="0" max="5"><br>
+
+    <label for="">Regiões</label>
+    <select name="" id="">
+        <optgroup>
+            <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </optgroup>
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espirito Santo</option>        
+            </optgroup>
+            <optgroup label="Região Norte">
+                <option value="AC">Acre</option>
+                <option value="AM">Amazonas</option>
+                <option value="AP">Amapá</option>
+                <option value="PA">Pará</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="TO">Tocantins</option>
+            </optgroup>           
+            <optgroup label="Região Nordeste">
+                <option value="AL">Alagoas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="MA">Maranhão</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="SE">Sergipe</option>
+            </optgroup>
+            <optgroup label="Região Centro-Oeste">
+                <option value="DF">Distrito Federal</option>
+                <option value="GO">Goiás</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+            </optgroup> <br> <br>
+        </optgroup>
+    </select>
+
+</body>
+</html>

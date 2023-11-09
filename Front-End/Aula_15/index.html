@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de perguntas</title>
+  </head>
+  <body>
+    <script>
+      let acertos = 0;
+
+      let perguntas = [
+        {
+          questao: "Qual a capital do Brasil? ",
+          opcao: ["Brasília", "São Paulo", "Salvador"],
+          correta: 1,
+        },
+        {
+          questao: "Qual a capital do Paraná? ",
+          opcao: ["Londrina", "Curitiba", "Maringá"],
+          correta: 2,
+        },
+        {
+          questao: "Qual a capital de Goiás? ",
+          opcao: ["Brasília", "Palmas", "Goiània"],
+          correta: 3,
+        },
+        {
+          questao: "Qual a capital de Rio Grande do Sul? ",
+          opcao: ["Caxias do Sul", "Porto Alegre", "Canoas"],
+          correta: 2,
+        },
+        {
+          questao: "Qual é o planeta mais próximo do Sol? ",
+          opcao: ["Marte", "Terra", "Saturno"],
+          correta: 1,
+        },
+        {
+          questao: "Qual é o maior oceano do mundo? ",
+          opcao: ["Oceano Índico", "Oceano Atlântico", "Oceano Pacífico"],
+          correta: 2,
+        },
+        {
+          questao: "Qual é o maior animal terrestre? ",
+          opcao: ["Elefante", "Girafa", "Rinoceronte"],
+          correta: 1,
+        },
+        {
+          questao: "Qual é o maior osso do corpo humano?",
+          opcao: ["Fêmur", "Cranio", "Falange"],
+          correta: 1,
+        },
+        {
+          questao: "Qual é o maior deserto do mundo?",
+          opcao: ["Deserto do Saara", "Deserto da Arábia", "Deserto de Gobi"],
+          correta: 1,
+        },
+        {
+          questao: "Quem pintou a Mona Lisa?",
+          opcao: ["Gustavo", "Matheus", "Nenhum dos dois"],
+          correta: 3,
+        },
+        {
+          questao: "Qual é o maior país do mundo em área territorial?",
+          opcao: [" Rússia", "Brasil", "China"],
+          correta: 1,
+        },
+        {
+          questao: "Qual é a fórmula química da água?",
+          opcao: ["H2O", "CO2", "O2"],
+          correta: 3,
+        },
+        {
+          questao: "Qual é o ponto mais alto do mundo?",
+          opcao: ["Montanha Everest", "Montanha K2", "Montanha Kilimanjaro"],
+          correta: 1,
+        },
+        {
+          questao: "Quem é o autor de Dom Quixote?",
+          opcao: ["William Shakespeare", "Homero", "Monteiro Lobato"],
+          correta: 1,
+        },
+        {
+          questao: "Quem criou o sítio do picapau amarelo?",
+          opcao: ["Gustavo", "Oiram", "Monteiro Lobato"],
+          correta: 3,
+        },
+      ];
+      
+      for (let i = 0; i < 5; i++) {
+        let sort = Math.floor(Math.random() * 15);
+        let resposta = prompt(
+          perguntas[sort].questao +
+            "\n" +
+            "1) " +
+            perguntas[sort].opcao[0] +
+            "\n" +
+            "2) " +
+            perguntas[sort].opcao[1] +
+            "\n" +
+            "3) " +
+            perguntas[sort].opcao[2]
+        );
+
+        if (parseInt(resposta) == perguntas[sort].correta) {
+          acertos++;
+        }
+      }
+
+      if (acertos < 3) {
+        document.body.style.backgroundColor = "red";
+      }
+      if (acertos < 5) {
+        document.body.style.backgroundColor = "green";
+      } else {
+        document.body.style.backgroundColor = "blue";
+      }
+
+      alert(acertos);
+    </script>
+  </body>
+</html>

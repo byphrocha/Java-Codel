@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background: url(arvore.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.corredor{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    background: url(mega.png);
+    height: 157px;
+    width: calc(1591px / 10);
+    animation: correr 1s steps(10) infinite, 
+               locomover 5s linear infinite ;
+}
+@keyframes correr{
+    0%{background-position: 0px}
+    100%{background-position: -1591px}
+}
+@keyframes locomover{
+    0%{transform: translateX(-100px);}
+    100%{transform: translateX(2020px);}
+}
+.corredor1{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    background: url(correr1.png);
+    height: 99px;
+    width: calc(840px / 10);
+    animation: correr 1s steps(10) infinite, 
+               locomover 5s linear infinite ;
+}
+.rolador{
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    background: url(rolando.png);
+    height: 50px;
+    width: calc(228px / 5);
+    animation: correr 1s steps(5) infinite, 
+               locomover 2.5s linear infinite ;
+}
+.cobra{
+    position: absolute;
+    top: 95%;
+    left: 5%;
+    background: url(cobra.png);
+    height: 27px;
+    width: calc(520px / 18);
+    animation: correr 2s steps(18) infinite, 
+               locomover 15s linear infinite ;
+}

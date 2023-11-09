@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.texto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: black;
+  border: 3px solid darkblue;
+  padding: 2rem 4rem;
+}
+.gradiente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  /*background: rgba(50, 50, 50, 0.9);*/
+  background: linear-gradient(45deg, purple, rgb(236, 236, 116), rgb(223, 113, 223), rgb(247, 186, 74));
+  background-size: 300% 300%;
+  animation: moverCores 5s linear infinite;
+}
+@keyframes moverCores {
+  0% {background-position: 0% 50%;}
+  50% { background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
