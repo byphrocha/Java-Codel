@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button onclick="iniciarGame()"> Iniciar Jogo </button>
+
+    <div id="minhaModal" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">X</span>
+            <h2 id="questao"> </h2>
+            <input type="text" id="pergunta">
+            <button onclick="checarPergunta()">Verificar</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <div id="placar" style="display: none;">
+    <h2>Seu resultado: </h2>
+    <p id="acertos"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

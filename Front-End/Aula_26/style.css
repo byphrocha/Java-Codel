@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+}
+.caixa {
+  background-color: rgb(0, 88, 139);
+  border: 1px solid none;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+}
+.caixa img {
+  width: 50px;
+}
+.caixa ul {
+    display: flex;
+    list-style: none;
+
+  }
+.caixa li {
+    padding: 0 10px 0 0;
+}
+.menuTop {
+  background-color: rgb(0, 88, 139);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+a{
+  text-decoration: none;
+  
+}
