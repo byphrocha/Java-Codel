@@ -1,5 +1,5 @@
 import java.util.*;
-public class atv01 {
+public class atv02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> lista = new ArrayList<>();
